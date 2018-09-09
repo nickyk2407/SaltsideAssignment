@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SaltsideCodingExercise</string>
+    <string name="empty_list">No items :(</string>
+    <string name="please_wait">Please, wait</string>
+    <string name="loading_progress">Loading…</string>
+    <string name="movies_progress">Loading Items…</string>
+</resources>
