@@ -6,7 +6,6 @@ import android.view.MenuItem;
 
 import com.example.nicky.saltsidecodingexercise.R;
 import com.example.nicky.saltsidecodingexercise.data.Items;
-import com.example.nicky.saltsidecodingexercise.ui.base.BaseLifecycleActivity;
 
 public class MainActivity extends AppCompatActivity implements ItemListAdapter.OnItemClickListener {
 
@@ -19,12 +18,10 @@ public class MainActivity extends AppCompatActivity implements ItemListAdapter.O
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        if (savedInstanceState == null) {
-            ItemListFragment fragment = new ItemListFragment();
+        ItemListFragment fragment = new ItemListFragment();
 
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment_container, fragment, ItemListFragment.TAG).commit();
-        }
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.fragment_container, fragment, ItemListFragment.TAG).commit();
     }
 
     public void setActionBarTitle(String title) {
